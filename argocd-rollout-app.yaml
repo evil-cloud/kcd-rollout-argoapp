@@ -4,10 +4,10 @@ metadata:
   name: internal-application-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: devops-api=d4rkghost47/gitops-api
-    argocd-image-updater.argoproj.io/devops-api.update-strategy: newest-build
-    argocd-image-updater.argoproj.io/devops-api.helm.image-name: image.repository
-    argocd-image-updater.argoproj.io/devops-api.helm.image-tag: image.tag 
+    argocd-image-updater.argoproj.io/image-list: devops-api-sec=d4rkghost47/gitops-api-sec
+    argocd-image-updater.argoproj.io/devops-api-sec.update-strategy: newest-build
+    argocd-image-updater.argoproj.io/devops-api-sec.helm.image-name: image.repository
+    argocd-image-updater.argoproj.io/devops-api-sec.helm.image-tag: image.tag 
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/git-branch: main
     argocd-image-updater.argoproj.io/write-back-target: helmvalues:values.yaml
